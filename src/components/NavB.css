@@ -1,5 +1,5 @@
 /* First NavBar *********************************************************************************/
-#logo{
+#imglogo{
 width: auto;
 height: 50px;
 
@@ -14,21 +14,29 @@ height: 50px;
    background-color: transparent;
   }
   
+ 
   #shoppingBag{
   
   width: 50px;
+  }
+
+  #shoppingBag img {
+    width: 100%;
+    height: 100%;
   }
   #searchIcon,#loveIcon{
 
     font-size:20px;
   }
-  #shoppingBag img{
 
-width: 100%;
-height:100%;
-
-  }
  
+.navbar-toggler-icon{
+
+  height: 70px;
+  width: 100px;
+}
+
+
 
    #leftNavBtn {
       width: 15%;
@@ -57,22 +65,12 @@ outline:none; /* eliminated default border on click*/
     border-bottom-style: solid ;
   }
   
-  #FirstNavBar a{
-
-
-    font-weight: 600;
-  }
+ 
   .dropdown-toggle:after { content: none ;/* arrow note display*/ }
   .colorNavB{
     color: black;
   }
-  .middleLinks{
-     
-    position : relative;
-   display : inline-block;
-  
-  }
- 
+
  
   .middleLinks::after {
       
@@ -110,7 +108,7 @@ outline:none; /* eliminated default border on click*/
   }
   #searchBtn{
   margin-left: 13%;
-  
+    color:  white;
     background-color:black;
     
    width: 25%;
@@ -139,19 +137,31 @@ outline:none; /* eliminated default border on click*/
 
 
     .dropdown-toggle:after { content:"" ;}
+
+  
+    
+  
+    #imglogo{
+      width: auto;
+      height: 130px;
+      
+      }
+  
+
+   
 }
-
-
-
 
 @media(max-width:768px){
 
-    #divNavBar{
-        height: 25%;
-    }
 
+  
+ 
+  #FirstNavBar,.dropdown-item{
 
+    font-size: 30px;
+  }
+
+ 
 }
-
 
 
