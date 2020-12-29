@@ -1,0 +1,157 @@
+/* First NavBar *********************************************************************************/
+#logo{
+width: auto;
+height: 50px;
+
+}
+
+#FirstNavBar{
+    width: 90%;
+    border-radius: 0%;
+   height: 15%;
+   
+   margin-left: 5%;
+   background-color: transparent;
+  }
+  
+  #shoppingBag{
+  
+  width: 50px;
+  }
+  #searchIcon,#loveIcon{
+
+    font-size:20px;
+  }
+  #shoppingBag img{
+
+width: 100%;
+height:100%;
+
+  }
+ 
+
+   #leftNavBtn {
+      width: 15%;
+      float: right;
+  }
+
+  #leftNavBtn button{
+margin-right: 10%;
+background-color: transparent;
+border-style: none;
+
+outline:none; /* eliminated default border on click*/
+
+
+  }
+ 
+  .mr-auto {
+  
+    margin-left: 25%;
+  
+  }
+  
+  .mr-sm-2{
+  
+   border-style: none;
+    border-bottom-style: solid ;
+  }
+  
+  #FirstNavBar a{
+
+
+    font-weight: 600;
+  }
+  .dropdown-toggle:after { content: none ;/* arrow note display*/ }
+  .colorNavB{
+    color: black;
+  }
+  .middleLinks{
+     
+    position : relative;
+   display : inline-block;
+  
+  }
+ 
+ 
+  .middleLinks::after {
+      
+    content : "";
+    position : absolute;
+    width : 100%;
+    height : 3px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transform : scaleX(0);
+    transform-origin: bottom right;
+    transition : transform 0.25s linear;
+  }
+  .middleLinks:hover::after {
+    transform-origin: bottom left;
+      transform: scaleX(1);
+  }
+  
+ 
+  
+  #searchInput{
+  width: 50%;
+  
+  height: 50px;
+  
+  }
+  #Sidebar{
+  
+    height: 40%;
+  }
+  #Sidebar div{
+  
+    margin-left:  20%;
+  }
+  #searchBtn{
+  margin-left: 13%;
+  
+    background-color:black;
+    
+   width: 25%;
+   height: 30%;
+    
+  }
+  
+  
+  @media(max-width:1200px){
+    
+    .mr-auto {
+  
+        margin-left: 15%;
+      
+      }
+
+      #leftNavBtn {
+        width: 20%;
+       
+    }
+
+
+  }
+
+@media(max-width:990px){
+
+
+    .dropdown-toggle:after { content:"" ;}
+}
+
+
+
+
+@media(max-width:768px){
+
+    #divNavBar{
+        height: 25%;
+    }
+
+
+}
+
+
+
